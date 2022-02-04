@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * main - program that prints the alphabet in lowercase, followed by a new line
@@ -13,8 +12,15 @@ int main(void)
 
 	while (alpha <= 'z')
 	{
-		putchar(alpha);
-		alpha += 1;
+		if (alpha == 'e' || alpha == 'q')
+		{
+			alpha += 1;
+		}
+		else
+		{
+			putchar(alpha);
+			alpha += 1;
+		}
 	}
 	putchar('\n');
 	return (0);
