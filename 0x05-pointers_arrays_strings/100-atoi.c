@@ -25,5 +25,5 @@ int _atoi(char *s)
 		l++;
 	}
 	sgn *= -1;
-	return (n * sgn);
+	return (d * sgn);
 }
