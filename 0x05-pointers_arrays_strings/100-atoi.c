@@ -9,21 +9,21 @@
 
 int _atoi(char *s)
 {
-	int i = 0;
-	int n = 0;
-	int signo = 1;
+	int l = 0;
+	int d = 0;
+	int sgn = 1;
 
-	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
+	while ((s[l] < '0' || s[l] > '9') && s[l] != 0)
 	{
-		if (s[i] == '-')
-			signo *= -1;
-		i++;
+		if (s[l] == '-')
+			sgn *= -1;
+		l++;
 	}
-	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
+	while ((s[l] >= '0' && s[l] <= '9') && s[l] != 0)
 	{
-		n = n * 10 - (s[i] - '0');
-		i++;
+		d = d * 10 - (s[l] - '0');
+		l++;
 	}
-	signo *= -1;
-	return (n * signo);
+	sgn *= -1;
+	return (n * sgn);
 }
