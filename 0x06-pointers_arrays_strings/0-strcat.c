@@ -3,6 +3,7 @@
 /**
  * _strcat - Function that concatenates 2 strings
  * @dest: Pointer
+ * @src: Pointer
  * Return: Dest
  */
 
