@@ -18,6 +18,6 @@ void print_number(int n)
 	if (factorial / 10)
 	{
 		print_number(factorial / 10);
-		_putchar((factorial % 10) + '0');
 	}
+	_putchar((factorial % 10) + '0');
 }
