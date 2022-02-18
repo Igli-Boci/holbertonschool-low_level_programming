@@ -5,17 +5,17 @@
  */
 void print_number(int n)
 {
-	unsigned int factorial;
+	unsigned int factor;
 
-	factorial = n;
+	factor = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		factorial = -factorial;
+		factor = -factor;
 	}
 
-	if (factorial / 10)
-		print_number(factorial / 10);
-	_putchar((factorial % 10) + '0');
+	if (factor / 10)
+		print_number(factor / 10);
+	_putchar((factor % 10) + '0');
 }
