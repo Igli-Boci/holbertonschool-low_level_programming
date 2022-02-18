@@ -9,12 +9,13 @@
 char *rot13(char *rot)
 {
 	int l = 0;
-	int k = 0;
+	int k;
 	char n1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char n2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (rot[l] != '\0')
 	{
+		k = 0;
 		while (n1[k] != '\0')
 		{
 			if (rot[l] == n1[k])
