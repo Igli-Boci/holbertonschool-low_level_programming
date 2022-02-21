@@ -2,19 +2,21 @@
 /**
  * print_chessboard - Function that prints a chess board
  * @a: Pointer
- * Return: Always 0 (Success)
+ * Return: 0
  */
 void print_chessboard(char (*a)[8])
 {
-	int i;
-	int j;
+	int l = 0;
+	int k = 0;
 
-	for (i = 0; i < 8; i++)
+	while (l < 8)
 	{
-		for (j = 0; j < 8; j++)
+		while (k < 8)
 		{
 			_putchar(a[i][j]);
+			k++;
 		}
+		l++;
 		_putchar('\n');
 	}
 }
