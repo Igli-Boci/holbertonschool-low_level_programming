@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strbrk - Function that searches for any set of bytes in a string
+ * _strpbrk - Function that searches for any set of bytes in a string
  * @s: Pointer
  * @accept: Bytes
  * Return: s or '\0'
@@ -31,5 +31,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		l++;
 	}
-	return (NULL);
+	return ('\0');
 }
