@@ -16,13 +16,13 @@ char *_strchr(char *s, char c)
 	{
 		if (s[l] == c)
 		{
-			return (s);
+			return (s + l);
 		}
 		l++;
 	}
 	if (s[l] == c)
 	{
-		return (s);
+		return (s + l);
 	}
 	else
 	{
