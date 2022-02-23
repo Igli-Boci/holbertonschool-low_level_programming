@@ -3,7 +3,7 @@
 /**
  * _puts_recursion - Functions that prints a string
  * @s: String
- * Return: s reverse
+ * Return: nothing, s new line
  */
 
 void _puts_recursion(char *s)
