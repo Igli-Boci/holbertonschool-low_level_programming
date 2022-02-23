@@ -9,11 +9,11 @@
 
 int get_prime(int num, int l)
 {
-	if (n <= 1)
+	if (num <= 1)
 	{
 		return (0);
 	}
-	if (n % l == 0)
+	if (num % l == 0)
 	{
 		return (0);
 	}
