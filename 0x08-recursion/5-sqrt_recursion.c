@@ -29,7 +29,7 @@ int _sqrt_recursion(int n)
  * Return: r or -1
  */
 
-int getSQroot(int n, int r)
+int _get_SQroot(int n, int r)
 {
 	if (r * r == n)
 	{
