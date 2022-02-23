@@ -31,7 +31,7 @@ int _sqrt_recursion(int n)
 
 int getSQroot(int n, int r)
 {
-	if (root * root == n)
+	if (r * r == n)
 	{
 		return (r);
 	}
