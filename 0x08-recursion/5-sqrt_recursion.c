@@ -22,7 +22,7 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (getSQroot(n, 0));
+		return (getSQroot(n, 1));
 	}
 }
 
