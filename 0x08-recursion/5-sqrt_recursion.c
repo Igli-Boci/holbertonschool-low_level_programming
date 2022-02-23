@@ -12,22 +12,18 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	if (n == 0)
-	{
-		return (0);
-	}
 	if (n == 1)
 	{
 		return (1);
 	}
 	else
 	{
-		return (getSQroot(n, 1));
+		return (_get_SQroot(n, 0));
 	}
 }
 
 /**
- * getSQroot - Function that find the sqroot
+ * _get_SQroot - Function that find the sqroot
  * @n: Number
  * @r: Root
  * Return: r or -1
@@ -45,6 +41,6 @@ int getSQroot(int n, int r)
 	}
 	else
 	{
-		return (getSQroot(n, r + 1));
+		return (_get_SQroot(n, r + 1));
 	}
 }
