@@ -19,22 +19,22 @@ int _find_l(char *s)
 }
 
 /**
- * check_palindrome - Function that checks if it is a palindrome nr
+ * check_pal - Function that checks if it is a palindrome nr
  * @s: Number
- * @i: Index
- * @l: Length
+ * @indx: Index
+ * @lngth: Length
  * Return: 0 or 1
  */
 
-int check_palindrome(char *s, int i, int l)
+int check_pal(char *s, int indx, int lngth)
 {
-	if (s[i] == s[l / 2])
+	if (s[indx] == s[lngth / 2])
 	{
 		return (1);
 	}
-	if (s[i] == s[l - i - 1])
+	if (s[indx] == s[lngth - indx - 1])
 	{
-		return (check_palindrome(s, l, i + 1));
+		return (check_pal(s, lngth, indx + 1));
 	}
 	return (0);
 }
@@ -47,15 +47,15 @@ int check_palindrome(char *s, int i, int l)
 
 int is_palindrome(char *s)
 {
-	int i = 0;
-	int l = _find_l(s);
+	int indx = 0;
+	int lngth = _find_l(s);
 
-	if (l <= 1)
+	if (!*s)
 	{
 		return (1);
 	}
 	else
 	{
-		return (check_palindrome(s, l, i));
+		return (check_pal(s, lngth, indx));
 	}
 }
