@@ -47,7 +47,6 @@ int check_palindrome(char *s, int i, int l)
 
 int is_palindrome(char *s)
 {
-	int indx = 0;
 	int lngth;
 
 	lngth = _find_l;
@@ -58,6 +57,6 @@ int is_palindrome(char *s)
 	}
 	else
 	{
-		return (check_palindrome(s, indx, lngth));
+		return (check_palindrome(s, lngth));
 	}
 }
