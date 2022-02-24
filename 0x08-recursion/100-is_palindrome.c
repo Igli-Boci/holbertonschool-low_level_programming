@@ -26,7 +26,7 @@ int _find_l(char *s)
  * Return: 0 or 1
  */
 
-int check_pal(char *s, int indx, int lngth)
+int check_pal(char *s, int lngth, int indx)
 {
 	if (s[indx] == s[lngth / 2])
 	{
