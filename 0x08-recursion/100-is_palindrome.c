@@ -50,7 +50,7 @@ int is_palindrome(char *s)
 	int indx = 0;
 	int lngth = _find_l(s);
 
-	if (!*s)
+	if (!(*s))
 	{
 		return (1);
 	}
