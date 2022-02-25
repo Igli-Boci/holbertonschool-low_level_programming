@@ -14,16 +14,17 @@ int main(int argc, char *argv[])
 	int k;
 	int mult;
 
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
 	l = atoi(argv[1]);
 	k = atoi(argv[2]);
 	mult = l * k;
 
 	printf("%d\n", mult);
 
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
 	return (0);
 }
