@@ -12,12 +12,11 @@ int main(int argc, char *argv[])
 {
 	int l = 0;
 	int k;
-	int nr;
 	int summ;
 
 	while (l < argc)
 	{
-		nr = atoi(argv[l]);
+		summ = summ + atoi(argv[l]);
 
 		k = 0;
 		while (argv[l][k] != '\0')
@@ -27,7 +26,6 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			summ = summ + nr;
 			k++;
 		}
 		l++;
