@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 	l = atoi(argv[1]);
 	k = atoi(argv[2]);
 	mult = l * k;
+
 	printf("%d\n", mult);
 
 	if (argc != 3)
