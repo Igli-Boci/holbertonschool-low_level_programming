@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int l = 0;
 	int k;
-	int summ;
+	int summ = 0;
 
 	while (l < argc)
 	{
