@@ -30,6 +30,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	l = 0;
 	while (str[l] != '\0')
 	{
 		dpl[l] = str[l];
