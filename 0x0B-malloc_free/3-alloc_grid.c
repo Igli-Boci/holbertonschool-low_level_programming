@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * alloc_grid - Function that returns a pointer
@@ -11,31 +12,27 @@
 int **alloc_grid(int width, int height)
 {
 	int **tdarr;
-	int l, k, m, n;
+	int l, k;
 
-	l = k = n = 0;
-	if (width <= 0 || height <= 0)
+	if (width < 1 || height < 1)
 		return (NULL);
-
 	tdarr = malloc(sizeof(int *) * height);
-
 	if (tdarr == NULL)
 		return (NULL);
 	for (l = 0; l < height; l++)
+	{
 		tdarr[l] = malloc(sizeof(int) * width);
 		if (tdarr[l] == NULL)
 		{
-			for (m = 0; m < l; m++)
-				free(tdarr[m]);
+			for (--l; l >= 0; l--)
+				free(tdarr[l]);
 			free(tdarr);
 			return (NULL);
 		}
-	for (k = 0; k < height; k++)
+	}
+	for (l = 0; l < height; l++)
 	{
-		for (n = 0; n < width; n++)
-		{
-			tdarr[l][n] = 0;
-		}
+		for (k = 0; k < width; k++)
+			tdarr[l][k] = 0;
 	}
 	return (tdarr);
-}
