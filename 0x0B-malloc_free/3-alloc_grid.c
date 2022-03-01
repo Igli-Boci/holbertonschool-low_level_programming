@@ -36,3 +36,4 @@ int **alloc_grid(int width, int height)
 			tdarr[l][k] = 0;
 	}
 	return (tdarr);
+}
