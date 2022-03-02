@@ -15,4 +15,4 @@
 
 **3. Leap year**
 
-*This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration. Fixing the print_remaining_days() function so that the output works correctly for all dates and all leap years.*
+*This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration. Fixing the "print_remaining_days()" function so that the output works correctly for all dates and all leap years.*
