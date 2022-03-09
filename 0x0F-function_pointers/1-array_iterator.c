@@ -3,7 +3,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterrator - Parameter of each element of an array.
+ * array_iterator - Parameter of each element of an array.
  * @array: Array
  * @size: Size
  * @action: Pointer to a function
