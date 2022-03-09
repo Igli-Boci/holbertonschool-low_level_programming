@@ -18,13 +18,13 @@ int (*get_op_func(char *s))(int, int)
 		{"/", op_div},
 		{"%", op_mod},
 		{NULL, NULL}
-	}
-	int i;
+	};
 
-	i = 0;
+	int i = 0;
+
 	while (ops[i].op != NULL)
 	{
-		if (*(ops[i]).op == *s)
+		if (*ops[i].op == *s)
 		{
 			return (ops[i].f);
 		}
